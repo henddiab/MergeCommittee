@@ -1,0 +1,608 @@
+.bgGray {
+    background-color: var(--bgGray);
+}
+#englishLang,
+#arabicLang {
+    border: 0;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+#englishLang:hover,
+#arabicLang:hover{
+    border: 2px solid var(--secondarycolor);
+}
+
+#changeToLight,
+#changeToDark {
+    padding: 0 14px 4px 14px;
+}
+.chatContainer {
+    border: 1px solid var(--lightGrayColor);
+    border-radius: 16px;
+    width: 65%;
+    margin: 24px auto;
+    padding: 12px;
+    .chatContnet {
+        direction: ltr;
+        border: none !important;
+        max-height: 400px;
+        height: 400px;
+    }
+    .personImg {
+        border-radius: 50%;
+        border: 1px solid var(--primaryColor);
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .message {
+        padding: 4px 8px 7px 8px;
+        background-color: var(--lighterGrayColor);
+        border-radius: 7px;
+    }
+}
+.video-player .play {
+    color: var(--primaryColor);
+}
+.hhmmss {
+    width: 90%;
+    text-align: left;
+    padding-left: 2px;
+}
+video {
+    border-radius: 12px;
+}
+.importance option::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: var(--resetColor);
+    border-radius: 5px;
+    display: inline-block;
+}
+.charts_container {
+    padding: 60px;
+}
+.highcharts-label span {
+    color: white !important;
+}
+.filter-member,
+.filter-member2 {
+    border-radius: 5px;
+    background-color: var(--offWhite);
+    color: gray;
+}
+.fa-check.active {
+    color: var(--primaryColor);
+}
+.icons button {
+    padding: 1px;
+}
+.aligned-container {
+    padding: 0 3rem 0 4rem;
+}
+.hidden-meeting .aligned-container {
+    padding: 0 2rem 0 3rem;
+}
+.bordered {
+    overflow-y: auto;
+    height: 200px;
+    border: 1px solid var(--lighterGrayColor);
+    border-radius: 6px;
+}
+.bordered2 {
+    border: 1px solid var(--lighterGrayColor);
+    padding-bottom: 8px;
+}
+.border-container div {
+    border: 2px solid;
+    border-bottom: 4px solid;
+    padding: 1rem 0;
+    font-size: 18px;
+}
+.border-container {
+    .blue {
+        border-color: var(--skyColor);
+        color: var(--skyColor);
+    }
+    .gray {
+        border-color: var(--grayColor);
+        color: var(--grayColor);
+    }
+    .black {
+        border-color: var(--darkPrimaryColor);
+        color: var(--darkPrimaryColor);
+    }
+    .green {
+        border-color: var(--primaryColor);
+        color: var(--primaryColor);
+    }
+}
+.mham-status {
+    div {
+        width: 150px;
+    }
+    div span:first-child {
+        width: 10px;
+        height: 10px;
+        margin-left: 6px;
+        display: inline-block;
+    }
+    .green {
+        background-color: var(--grayColor);
+    }
+    .purple {
+        background-color: var(--accentColor);
+    }
+    .orange {
+        background-color: var(--yellowColor);
+    }
+    .yellow {
+        background-color: var(--yellow2Color);
+    }
+    .red {
+        background-color: var(--redColor);
+    }
+    .sky {
+        background-color: var(--skyColor);
+    }
+    .mint {
+        background-color: var(--primaryColor);
+    }
+    .other {
+        background-color: var(--lightSkyColor);
+    }
+}
+.direction-ltr {
+    direction: ltr;
+}
+.blured {
+    opacity: 0.5;
+}
+.meeting-menu {
+    border: none;
+    background: none;
+    color: var(--primaryColor);
+}
+.disabled-input {
+    background-color: var(--offWhite) !important;
+    pointer-events: none;
+}
+.fileinputWrap {
+    background-color: var(--offWhite);
+    border-radius: 8px;
+}
+.round {
+    position: relative;
+}
+.note {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 0.2rem 1rem;
+}
+.file-link {
+    background-color: var(--offWhite);
+}
+.hide-morasla {
+    border: none;
+    background: none;
+}
+.bg-gray {
+    background-color: var(--offWhite);
+    padding: 1rem;
+}
+.fixed-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid var(--lighterGrayColor);
+    padding: 18px;
+    width: 100%;
+    margin: 24px auto;
+}
+.comments,
+.meeting-container {
+    border: 2px solid lightgray;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.meeting-name,
+.group .modal-header {
+    cursor: pointer;
+}
+.status2 {
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    z-index: 1000;
+    box-shadow: 1px 1px 1px lightgrey, -1px -1px 1px lightgrey;
+    width: 320px;
+    padding: 16px;
+}
+.Icon {
+    min-width: 46px;
+    min-height: 46px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.Icon svg {
+    transform: translate(-6px, 4px);
+    top: 8px;
+    left: 12px;
+}
+.card__search_Input {
+    padding: 22px 38px;
+    border-radius: 7px;
+    display: block;
+    border: 1px solid var(--darkgray);
+}
+.card__search_Input:focus {
+    border: 2px solid var(--darkgray);
+}
+.generated-member {
+    > div {
+        border-radius: 5px;
+        background-color: var(--lighterGrayColor);
+    }
+    span {
+        line-height: 14px;
+    }
+    i {
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
+.leg-status2 {
+    div {
+        border-radius: 5px;
+    }
+    div span:first-child {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-left: 6px;
+        display: inline-block;
+        background-color: var(--grayColor);
+    }
+}
+// change some standards
+.template-path {
+    position: relative;
+    &:after {
+        content: "\f0c6";
+        position: absolute;
+        left: 4px;
+        font-family: "Font Awesome 5 free";
+        top: 50%;
+        margin-left: 5px;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: block;
+        color: var(--mutedColor);
+        font-size: 16px;
+    }
+}
+.round label {
+    background-color: var(--mutedColor);
+    border: 1px solid var(--mutedColor);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    right: 0;
+    position: absolute;
+    top: 7px;
+    width: 16px;
+    line-height: 10px;
+    text-align: center;
+}
+.round label:after {
+    font-size: 10px;
+    content: "\2714";
+}
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+.round input[type="checkbox"]:checked + label {
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    color: white;
+}
+.file-progress {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+.file-progress p {
+    margin-bottom: 1px;
+}
+.file {
+    padding-right: 42px;
+    &:before {
+        width: 40px;
+        border-left: none;
+    }
+}
+.tabs .nav-fill li a.active {
+    border-top: 2px solid var(--primaryColor);
+}
+.morasalat .nav-tabs {
+    border: 1px solid var(--bgGray);
+}
+table th,
+table td {
+    font-weight: 400;
+    border-left: 1px solid white;
+    padding-right: 12px;
+}
+table th {
+    font-size: 16px;
+}
+.col-form-label {
+    font-size: 15px;
+    margin-top: 8px;
+}
+table td {
+    font-size: 14px;
+}
+.fileinputWrap {
+    border-radius: 8px;
+}
+.fileinput-button {
+    background-color: transparent;
+}
+.fileinput-button:hover {
+    color: black;
+}
+.alert-success {
+    border-right: 6px solid var(--lightGreenColor);
+    border-radius: 6px;
+    width: 45%;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: var(--borderColor);
+    top: -90px;
+    display: none;
+    .close {
+        left: 5px;
+        font-size: 28px;
+    }
+}
+.alert-success::before {
+    content: "\2714";
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    border-radius: 50%;
+    background-color: var(--lightGreenColor);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+#tab1-collapse1::after {
+    content: "";
+    width: 85%;
+    border-bottom: 1px dotted lightgray;
+    display: block;
+    border-bottom-width: 2px;
+    padding-top: 1.7rem;
+    margin-right: 3rem;
+}
+.row.scroll {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.form-control {
+    background: none;
+    background-color: var(--lightBackGround);
+}
+button:focus {
+    outline: none !important;
+}
+.hidden-meeting .card-header p {
+    color: black;
+}
+.title-wrapper button {
+    border: 1px solid lightgray;
+    background-color: var(--offWhite);
+    color: darkgray;
+    padding: 2px 20px;
+    font-size: 22px;
+    border-radius: 3px;
+}
+.filters,
+.filters2,
+.filters3 {
+    position: absolute;
+    top: 3rem;
+    width: 300px;
+    border: 1px solid var(--offWhite);
+    background-color: white;
+    z-index: 1000;
+}
+.filters {
+    left: 90px;
+}
+.filters2,
+.filters3 {
+    left: 180px;
+}
+.main-nav .showw-list {
+    position: absolute;
+    right: 18.8%;
+    top: 2.5rem;
+    width: 200px;
+    border: 1px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    z-index: 1000;
+    padding: 1rem;
+}
+.main-nav .showw-files,
+.main-nav .showw-privilage {
+    position: absolute;
+    top: 1rem;
+    width: 200px;
+    border: 1px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    z-index: 1000;
+    padding: 1rem;
+    right: 14.2em;
+}
+.main-nav .showw-files,
+.main-nav .showw-privilage,
+.main-nav .showw-list {
+    border-bottom: 2px solid var(--warningColor);
+}
+.main-nav .showw-list a,
+.main-nav .showw-files a {
+    display: block;
+    color: white;
+    font-size: 14px;
+}
+.main-nav .showw-list li {
+    padding: 0 6px;
+}
+.main-nav .showw-list li:hover {
+    background-color: var(--darkPrimaryColor);
+}
+.main-nav .showw-list a:hover {
+    text-decoration: none;
+    color: white !important;
+}
+.main-nav .showw-list::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 8px solid var(--primaryColor);
+    border-color: transparent transparent var(--primaryColor);
+    margin-top: -30px;
+    right: 8px;
+    position: absolute;
+    left: 0;
+}
+.main-nav .show-files3:hover > ul {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+}
+.main-nav .show-list:hover > ul {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+}
+.main-nav .show-privilage:hover > ul {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+}
+.filters h3.col-form-label {
+    font-size: 18px;
+}
+// style of new tables
+.mham .status,
+.goals .status {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    font-size: 12px;
+    color: var(--white) fff;
+    margin-left: 7px;
+    background: var(--lighterGrayColor);
+    border-radius: 50%;
+    text-align: center;
+}
+.mham .active,
+.goals .active {
+    background: var(--primaryColor);
+}
+.scroll::-webkit-scrollbar {
+    width: 10px;
+}
+.table-responsive {
+    overflow-x: hidden;
+}
+.table-responsive:hover {
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: lightgray;
+}
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scroll::-webkit-scrollbar-track-piece:start {
+    margin-top: 10px;
+}
+.scroll::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 10px;
+}
+.geha-name {
+    > ul {
+        padding-right: 18px;
+        > li {
+            padding-top: 12px;
+        }
+        i {
+            color: var(--yellow2Color);
+            padding: 0 8px;
+            font-size: 16px;
+        }
+    }
+    ul.first-level {
+        > li {
+            padding-top: 4px;
+        }
+        padding-right: 10px;
+    }
+    ul.second-level {
+        padding-right: 16px;
+        > li i {
+            font-size: 14px;
+        }
+    }
+}
+td span {
+    &.accept,
+    &.done {
+        color: var(--successColor);
+    }
+    &.no-accept {
+        color: var(--resetColor);
+    }
+    &.no-answer,
+    &.not-finished {
+        color: var(--yellowColor);
+    }
+    &.not-start {
+        color: var(--yellow2Color);
+    }
+    &.other,
+    &.redo {
+        color: var(--primaryColor);
+    }
+}
+.efadat {
+    th,
+    td {
+        text-align: right;
+    }
+}
+.self-role td {
+    color: var(--primaryColor);
+}

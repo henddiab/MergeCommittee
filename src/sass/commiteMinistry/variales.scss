@@ -1,0 +1,126 @@
+.root {
+    --white: #ffffff;
+    --offWhite: #fdfdfd;
+    --black: #000000;
+    --primaryColor: #1abbad;
+    --lightPrimaryColor: #5bb1f8;
+    --secondarycolor: #ffbd5b;
+    --tertiaryColor: #8ad000;
+    --accentColor: #b66abd;
+    --resetColor: #f44336;
+    --draftColor: #4682b4;
+    --orangeColor: #ff8200;
+    --yellowColor: #fbb040;
+    --yellow2Color: #f5fd81;
+    --pinkColor: #fccece;
+    --redColor: #c66868;
+    --stateColor: #ff0084;
+    --grayColor: #7f7f7f;
+    --successColor: #2dbb1d;
+    --greenColor: #1baa76;
+    --lightGreenColor: #6eed7a;
+    --skyColor: #75a9f2;
+    --lightSkyColor: #96d2bb;
+    --darkPrimaryColor: #0c6056;
+    --evenColor: #fafafa;
+    --oddColor: #ffffff;
+    --other: #a7d4f8;
+    // graies
+    --lighterGrayColor: #f7f7f7;
+    --lightGrayColor: #bfbfbf;
+    --darkgray: #888888;
+    --darkergray: #444;
+    --borderColor: #e5e5e5;
+    --borderColor2: #75a9f2;
+    --borderColor3: #1abbad;
+    --bgColor: #ffffff;
+    --textColor: #8d8d8d;
+    --warningColor: #bbb41a;
+    --alertColor: #82c885;
+    --dangerColor: #ed9393;
+    --mutedColor: #c0c0c0;
+    --bgGray: #fafafa;
+    --bg-gray: #fdfdfd;
+    --invalid: #dc3545;
+    /////////////////// components colors....
+    --footerBgColor: #f2f2f2;
+    --tableHeaderColor: #e6edec;
+    --tableOddColor: #ffffff;
+    --tableEvenColor: #fcf3f3;
+    --border-radius: 4px;
+    // buttons
+    --btnPrHover: #004c45;
+    --btnPrPress: #1abbad;
+    --btnPrDisable: #cccccc;
+    // reverse
+    --btnPr-revHover: #1abbad;
+    --btnPr-revPress: #ffffff;
+    --btnPr-revDisable: #ffffff;
+    // gray
+    --btnGray-Hover: #707070;
+    --btnGray-Press: #ffffff;
+    --btnGray-Disable: #ffffff;
+    ////////////////////// fonts
+    --primaryFont: "DIN Next LT Arabic";
+    --accentFont: tahoma;
+    // --lightFont   : ;
+    --semiBold: 500;
+    // --boldFont    : ;
+    --fontAwesome: "fontAwesome";
+    --mobile: 768px;
+}
+
+.dark {
+    ////////////////////// color
+    --white: #ffffff;
+    --offWhite: #fdfdfd;
+    --black: #000000;
+    --primaryColor: red;
+    --accentColor: #b66abd;
+    --resetColor: #f44336;
+    --draftColor: #4682b4;
+    --orangeColor: #ff8200;
+    --yellowColor: #fbb040;
+    --redColor: #c66868;
+    --grayColor: #7f7f7f;
+    --darkPrimaryColor: #0c6056;
+    --evenColor: #fafafa;
+    --oddColor: #ffffff;
+    // graies
+    --lighterGrayColor: #f7f7f7;
+    --lightGrayColor: #bfbfbf;
+    --darkgray: #888888;
+    --borderColor: #e5e5e5;
+    --textColor: #CFCFCF;
+    --warningColor: #bbb41a;
+    --dangerColor: #ed9393;
+    --mutedColor: #c0c0c0;
+    --bgGray: #fafafa;
+    --invalid: #dc3545;
+    /////////////////// components colors....
+    --footerBgColor: #f2f2f2;
+    --tableHeaderColor: #e6edec;
+    --tableOddColor: #ffffff;
+    --tableEvenColor: #fcf3f3;
+    --border-radius: 4px;
+    ////////////////////// fonts
+    --primaryFont: "DIN Next LT Arabic";
+    --accentFont: tahoma;
+    // --lightFont   : ;
+    --semiBold: 500;
+    // --boldFont    : ;
+    --fontAwesome: "fontAwesome";
+    --mobile: 768px;
+    // buttons
+    --btnPrHover: #004c45;
+    --btnPrPress: #1abbad;
+    --btnPrDisable: #cccccc;
+    // reverse
+    --btnPr-revHover: #1abbad;
+    --btnPr-revPress: #ffffff;
+    --btnPr-revDisable: #ffffff;
+    // gray
+    --btnGray-Hover: #707070;
+    --btnGray-Press: #ffffff;
+    --btnGray-Disable: #ffffff;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js root" lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{% if title %} {{ title }} {% else %} GPM {% endif %}</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function(e, t, n) {
+            var r = e.querySelectorAll("html")[0];
+            r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+        })(document, window, 0);
+
+    </script>
+</head>
+<body>
+
+	<div class="page-wrapper">
+		{% include 'headerMinistry.html' %} {% include 'account_strip.html' %} {% block content %} {% endblock %} {% include 'footerMinistry.html' %}
+		<div class="container-fluid">
+			<main class="main-content px-md-4">
+
+			</main>
+		</div>
+
+    </div>
+	<script>
+		var arLang = document.getElementById('arabicLang');
+		var enLang = document.getElementById('englishLang');
+	
+		var lang = localStorage.getItem('lang');
+	
+	
+		if (arLang && enLang) {
+			if (lang === null || lang === 'ar') {
+				enLang.style.display = 'none';
+				arLang.style.display = 'flex';
+			} else if (lang === 'en') {
+				enLang.style.display = 'flex';
+				arLang.style.display = 'none';
+			}
+		}
+	</script>
+		<!-- scripts -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!-- <script src="./../js/bootstrap.bundle.js"></script> -->
+	
+	
+		<!--------------------- link js files here --------------------->
+		<script src="js/select2.js"></script>
+		<script src="js/bootstrap-clockpicker.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/jquery.gre.js"></script>
+		<script src="js/jquery-simple-tree-table.js"></script>
+		
+		<!-- time spinner -->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/jquery-ui-timespinner.js"></script>
+		
+		<!-- calendar -->
+		<script src="js/main.js"></script>
+		<script src="js/locales-all.js"></script>
+		
+		<!-- datepicker -->
+		<script src="js/calendar/jquery.calendars.js"></script>
+		<script src="js/calendar/jquery.calendars.plus.js"></script>
+		<script src="js/calendar/jquery.plugin.js"></script>
+		<script src="js/calendar/jquery.calendars.picker.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic-ar.js"></script>
+		
+		<!-- charts -->
+		<script src="js/highcharts/proj4.js"></script>
+		<script src="js/highcharts/highcharts.js"></script>
+		<script src="js/highcharts/drilldown.js"></script>
+		<script src="js/highcharts/variable-pie.js"></script>
+		<script src="js/charts.js"></script>
+		<script src="js/jquery.multi-select.js"></script>
+		
+		<script src="js/script2.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>

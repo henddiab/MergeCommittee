@@ -1,0 +1,186 @@
+/// top-header
+.top-header {
+	background:#fff url('./../images/bg_art_topleft.png') no-repeat;
+}
+
+// menu-wrapper
+.main-nav {
+	background: rgb(0,76,69);
+	background: -webkit-linear-gradient(186deg, rgba(0,76,69,1) 0%, rgba(2,175,156,1) 100%);
+	background: -o-linear-gradient(186deg, rgba(0,76,69,1) 0%, rgba(2,175,156,1) 100%);
+	background: linear-gradient(276deg, rgba(0,76,69,1) 0%, rgba(2,175,156,1) 100%);
+
+	.navbar{
+		padding:5px 1rem;
+	}
+	
+	.navbar-collapse {
+		justify-content: space-between;
+	}
+
+	.today {
+		color:#FFF;
+		@media(max-width: var(--mobile)){
+			display: none;
+		}
+	}
+
+	.navbar-toggler {
+		background-color: #FFF;
+		outline:none;
+		padding:0.15rem 0.35rem;
+		
+		.navbar-toggler-icon {
+			color:#666;
+			font-size: 1.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		} 
+	}
+	
+	.navbar-nav {
+		margin:0;
+		padding:0;
+
+		.nav-item {
+			position: relative;
+			.nav-link {
+				color:#FFF;
+				padding-right:.8rem;
+				padding-left:.8rem;
+			}
+			.nav-link-notify {
+				position: absolute;
+				top:0;
+				left:-4px;
+				width: 20px;
+				height: 20px;
+				font-size: .9rem;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				border-radius: 50%;
+				background-color:#8AD000;
+				color: #FFF;
+			}
+		}
+	}
+
+}
+
+.account-strip {
+    position: relative;
+    background: var(--lighterGrayColor) url('../images/head_medl_art.png') no-repeat 0 0;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    text-align: right;
+    padding: 5px 0;
+    .breadcrumb {
+        float: right;
+        @media (max-width: var(--mobile)) {
+            display: none;
+        }
+    }
+    .user-account {
+        background: var(--bgGray);
+        opacity: 0.9;
+        display: inline-block;
+        float: right;
+        margin: 5px 0;
+        padding: 5px 12px;
+        border-bottom: 1px solid var(--primaryColor);
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        @media (max-width: var(--mobile)) {
+            display: block;
+            float: none;
+            text-align: right;
+        }
+    }
+    .global-search {
+        //float:left;
+        margin: 0 12px;
+        position: relative;
+        top: 5px;
+        display: inline-block;
+        @media (max-width: var(--mobile)) {
+            margin: 5px 0;
+            width: 100%;
+            display: block;
+            top: 0;
+        }
+        &.focused {
+            width: 60%;
+            @media (max-width: var(--mobile)) {
+                width: 100%;
+            }
+            .search_input {
+                opacity:1;
+                width: 100%;
+            }
+        }
+        .search_input {
+            border: 0;
+            height: 34px;
+            border-bottom: 1px solid var(--primaryColor);
+            background-color: var(--white) fff;
+            //background-color:transparent;
+            padding-right: 12px;
+            padding-left: 40px;
+            outline: none;
+            border-radius: 0;
+            opacity:0.7;
+            transition:width, opacity 350ms ease-in-out;
+            @media (max-width: 540px) {
+                width: 100%;
+            }
+        }
+        button[type="submit"],
+        input[type="submit"],
+        a,
+        .search-link {
+            border: 0;
+            background: transparent;
+            color: var(--textColor);
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0;
+            min-width: auto;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    .select-wrapper {
+        margin: 0 5px;
+        display: inline-block;
+        min-width: 80px;
+        //max-width: 120px;
+        &:before {
+            content: "";
+            display: none;
+        }
+        &:after {
+            top: 9px;
+        }
+        select {
+            margin: 0;
+            outline: none;
+            //border:0;
+            height: 30px;
+            line-height: 1;
+        }
+    }
+}
