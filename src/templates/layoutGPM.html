@@ -40,12 +40,15 @@
 <body>
 
 	<div class="page-wrapper">
-		{% include 'headerGPM.html' %} {% include 'account_strip.html' %} {% block content %} {% endblock %} {% include 'footerGPM.html' %}
-		<div class="container-fluid">
-			<main class="main-content px-md-4">
+		{% if project === 'committeGPM' %}
+			{% include 'headerGPM.html' %}
+		{% else %}
+			{% include 'headerMinistry.html' %}
+		{% endif %}
 
-			</main>
-		</div>
+		{% include 'account_strip.html' %} 
+		{% block content %} {% endblock %} 
+		{% include 'footerGPM.html' %}
 
     </div>
 

@@ -29,6 +29,7 @@ var CONFIGS = [ defaultApp, commiteApp ]
 console.log( 'app name: ', CONFIGS[1].app.name)
 
 var pkg = require('./package.json')
+console.log('pkg:  ', pkg)
 var devBuild = ((process.env.NODE_ENV || 'development').trim().toLowerCase() !== 'production');
 
 /*
@@ -103,15 +104,18 @@ function fonts() {
 
  	return merge(tasks);
 }
-
+ 
 /*
 	process html task  here
-*/
+*/ 
 function html() {
 	const tasks = CONFIGS.map(config => {
      	return gulp.src(config.html.pages, {allowEmpty: true })
      		.pipe(nunjucksRender({
-				path: [config.html.templates]
+				path: [config.html.templates],
+				data: {
+					project: config.app.name
+				}
 			}))
 			.pipe(gulp.dest(config.html.exportPath))
 			.pipe(browserSync.stream());
